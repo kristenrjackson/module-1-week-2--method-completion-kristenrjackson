@@ -67,9 +67,10 @@ public class StringProblems {
      */
 
     public String stringCombiner(String stringA, String stringB){
-        if (stringA.compareTo(stringB) < 0) {
+        int whichIsFirst = stringA.compareToIgnoreCase(stringB);
+        if (whichIsFirst < 0) {
             return stringA + stringB;
-        } else if (stringB.compareTo(stringA) < 0) {
+        } else if (whichIsFirst > 0){
             return stringB + stringA;
         } else {
             return null;
@@ -90,7 +91,7 @@ public class StringProblems {
 
     public String left2 (String str){
         String substr = "";
-        substr = str.substring(2, str.length() - 1);
-        return (substr + str.charAt(0) + str.charAt(1));
+        substr = str.substring(2, str.length());
+        return (substr + str.substring(0,2));
     }
 }

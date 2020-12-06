@@ -40,18 +40,21 @@ public class LogicProblems {
      * - nearTen(17) → false
      * - nearTen(19) → true
      */
-    int num = 12;
+    int num = 19;
 
     public boolean nearTen(int num) { // If I comment out the previous method, these errors go away?
-        if ((num > 0) && (num % 10 <= 2)) {
+
+        int result = num % 10;
+
+        if ((num > 0) && ((result <= 2) || (result >= 8))) {
             return true;
         } else {
             return false;
         }
     }
 
-/*    public static void main(String[] args) { // Test for nearTen method
-        System.out.println(new LogicProblems().nearTen(12));
-    }*/
+    public static void main(String[] args) { // Test for nearTen method
+        System.out.println(new LogicProblems().nearTen(19));
+    }
 }
 

@@ -15,8 +15,8 @@ public class WarmupProblems {
      */
 
 
-    int n = 2;
-    String str = "Hi";
+    /*int n = 2;
+    String str = "Hi";*/
 
     public String stringTimes(String str, int n) {
         String s = str;
@@ -26,9 +26,9 @@ public class WarmupProblems {
         return s;
     }
 
-    public static void main (String[] args) { // Test for stringTimes method
+    /*public static void main (String[] args) { // Test for stringTimes method
         System.out.println(new WarmupProblems().stringTimes("Hi", 2));
-    }
+    }*/
 
 
 
